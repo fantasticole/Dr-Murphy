@@ -1,0 +1,255 @@
+#bootstrapOverrides{
+	color: #7E0006;
+	margin-top: 50px;
+	background-color: #7E0006;
+	font-family: 'Slabo 27px', serif;
+	overflow: hidden;
+}
+
+#bootstrapOverrides h3{
+	/*font-family: 'Overlock', cursive;*/
+	/*font-family: 'Cinzel', serif;*/
+	font-family: 'Kalam', cursive;
+	/*font-family: 'Teko', sans-serif;*/
+	/*text-decoration: underline;*/
+	text-align: center;
+	font-size: 1.9em;
+}
+
+#bootstrapOverrides .container, #bootstrapOverrides .nav{
+	width: 100%;
+	padding: 0;
+}
+
+#bootstrapOverrides .navbar-default{
+	z-index: 5;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+#bootstrapOverrides nav li{
+	width: 25%;
+	min-height: 50px;
+	font-size: 5vmin;
+	text-align: center;
+	padding: 5px;
+}
+
+#bootstrapOverrides nav a{
+	color: #7E0006;
+}
+
+#bootstrapOverrides b{
+	font-weight: 700;
+}
+
+#bootstrapOverrides p{
+	font-size: 4vh;
+	margin-bottom: 5px;
+}
+
+#bootstrapOverrides nav li:hover{
+	background-color: #7E0006;
+}
+
+#bootstrapOverrides nav li:hover a{
+	color: #fff;
+}
+
+#bootstrapOverrides nav a:hover{
+	color: #fff;
+}
+
+#bootstrapOverrides .here{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.info{
+	display: none;
+	position: relative;
+	bottom: 15vh;
+	height: 70vh;
+	width: 80vw;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
+	overflow-y: scroll;
+	margin: auto;
+	padding: 15px;
+}
+
+.active{
+	display: block;
+}
+
+#home .text{
+	width: 59vw;
+	text-align: center;
+	font-size: 3.5vh;
+	position: absolute;
+	right: 0;
+}
+
+#home img{
+	height: 31vw;
+	width: auto;
+	position: absolute;
+	top: calc((70vh - 31vw)/2);
+	left: 0;
+	margin: 5px;
+}
+
+#extended{
+	display: none;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+
+#extended i{
+	position: fixed;
+	top: 5%;
+	right: 7%;
+	color: #fff;
+	cursor: pointer;
+}
+
+.moreInfo{
+	cursor: pointer;
+	width: 125px;
+	margin-left: calc((80vw - 125px)/2);
+}
+
+#moreInfo{
+	background-color: #fff;
+	height: 90vh;
+	width: 70vw;
+	position: absolute;
+	top: 5vh;
+	left: 15vw;
+	padding: 15px;
+	overflow-y: scroll;
+}
+
+	#moreInfo img, #moreInfo p{
+		display: inline;
+	}
+
+	#moreInfo img{
+		float: left;
+		margin: 0 20px 0 0;
+	}
+
+.getInTouch{
+	width: 66vw;
+	position: absolute;
+	left: 7vw;
+	text-align: right;
+}
+
+	.getInTouch p{
+		margin-right: 10px;
+	}
+
+	.textInput, .messageArea, .checkHuman{
+		width: 66vw;
+		display: flex;
+		flex-direction: row;
+		margin-top: 5px;
+	}
+
+		.textInput p, .messageArea p, .checkHuman p{
+			width: 22vw;
+		}
+
+
+		.textInput input, .messageArea textarea{
+			width: 44vw;
+			min-width: 190px;
+		}
+
+		#bootstrapOverrides input, #bootstrapOverrides textarea{
+			border: 1px solid #7E0006;
+			font-family: 'arial';
+		}
+
+		.checkHuman{
+			position: relative;
+		}
+
+		.textInput input, .checkHuman input{
+			max-height: 33px;
+		}
+
+		.messageArea textarea{
+			height: 30%;
+			padding: 1px;
+		}
+
+		.checkHuman input{
+			/*flex: 1;*/
+			/*min-width: 190px;*/
+			height: 36px;
+			position: absolute;
+			right: 0;
+			/*bottom: 0;*/
+			/*margin-top: 8pc;*/
+		}
+
+/*		.checkHuman img, .checkHuman a{
+			position: absolute;
+			left: 0;
+		}*/
+
+
+	.getInTouch button{
+		width: 80px;
+		position: relative;
+		margin-left: calc((66vw - 160px)/3);
+		margin-top: 8px;
+		float: left;
+	}
+
+#footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	/*background-color: rgba(255, 255, 255, 0.9);*/
+	/*background-color: #fff;*/
+	background-image: url("../images/British_Honduras_1914.jpg");
+	background-size: 100vw;
+	font-size: 15px;
+	text-align: center;
+	padding: 13px;
+}
+
+	#footer p{
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+
+@media (max-width:768px){
+	#bootstrapOverrides .navbar-toggle{
+		border-color: transparent;
+		margin-right: 20px;
+	}
+
+	#bootstrapOverrides .navbar-toggle:focus, #bootstrapOverrides .navbar-toggle:hover{
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+
+	#bootstrapOverrides .nav, #bootstrapOverrides nav li{
+		width: 100%;
+		margin: 0;
+	}
+
+	.getInTouch{
+		width: 90%;
+		position: absolute;
+		left: 5%;
+		text-align: right;
+	}
+}
+

@@ -1,103 +1,234 @@
+/*## COLORS ##*/
+/*## BODY ##*/
+/*## FONTS ##*/
+
+
+
+/* ## COLORS ## */
+/* Maroon - #7E0006/rgba(126, 0, 6, 1) */
+/* Rose - #B16669/rgba(177, 102, 105, 1) */
+/* White - #fff/rgba(255, 255, 255, 1) */
+/* Steel Blue - #518DBB/rgba(81, 141, 187, 1) */
+/* Bright Blue - #5386E4/rgba(83, 134, 228, 1) */
+/* Turquoise - #75DDDD/rgba(117, 221, 221, 1) */
+/* Slate Grey - #363636/rgba(54, 54, 54, 1) */
+
+
+/* ## BODY ## */
 #bootstrapOverrides{
 	color: #7E0006;
-	margin-top: 50px;
-	background-color: #7E0006;
-	font-family: 'Slabo 27px', serif;
-	overflow: hidden;
+	/*color: #fff;*/
+	margin-top: 45px;
+	/*background-color: #7E0006;*/
+	background-color: #fff;
+	/*overflow: hidden;*/
+	font-family: 'Droid Sans', sans-serif;
 }
 
+/* ## FONTS ## */
+#bootstrapOverrides h1,
+#bootstrapOverrides h2,
+#bootstrapOverrides h3,
+#bootstrapOverrides h4 {
+	font-family: 'Belleza', sans-serif;
+	font-weight: 600;
+}
+#bootstrapOverrides h1{
+	font-size: 36px;
+}
+#bootstrapOverrides h2{
+	font-size: 28px;
+}
 #bootstrapOverrides h3{
-	/*font-family: 'Overlock', cursive;*/
-	/*font-family: 'Cinzel', serif;*/
-	font-family: 'Kalam', cursive;
-	/*font-family: 'Teko', sans-serif;*/
-	/*text-decoration: underline;*/
-	text-align: center;
-	font-size: 1.9em;
+	font-size: 20px;
+}
+#bootstrapOverrides b{
+	font-weight: 700;
+}
+#bootstrapOverrides p{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+#bootstrapOverrides a{
+	color: #518DBB;
+}
+#bootstrapOverrides a:hover{
+	color: rgba(177, 102, 105, 0.5);
+	text-decoration: none;
 }
 
 #bootstrapOverrides .container, #bootstrapOverrides .nav{
 	width: 100%;
 	padding: 0;
+	height: 45px;
 }
 
 #bootstrapOverrides .navbar-default{
-	z-index: 5;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(126, 0, 6, 0.9);
+	border: none;
+	border-bottom: 1px solid #7E0006;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-#bootstrapOverrides nav li{
-	width: 25%;
-	min-height: 50px;
-	font-size: 5vmin;
+#bootstrapOverrides nav ul,
+#bootstrapOverrides nav li {
+	width: 100%;
 	text-align: center;
-	padding: 5px;
 }
 
 #bootstrapOverrides nav a{
+	color: #fff;
+	padding: 10px 0;
+	font-size: 17px;
+	width: 98%;
+	margin-left: 1%;
+	text-shadow: 0 0 2px #000;
+}
+
+#bootstrapOverrides nav li:hover a,
+#bootstrapOverrides nav a:hover {
+	background-color: #fff;
+	text-shadow: none;
 	color: #7E0006;
 }
 
-#bootstrapOverrides b{
-	font-weight: 700;
+#bootstrapOverrides .navbar {
+	min-height: 45px;
 }
 
-#bootstrapOverrides p{
-	font-size: 4vh;
-	margin-bottom: 5px;
+#bootstrapOverrides .navbar-toggle{
+	border-color: transparent;
+	margin-right: 20px;
 }
 
-#bootstrapOverrides nav li:hover{
+#bootstrapOverrides .navbar-toggle:focus, #bootstrapOverrides .navbar-toggle:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#bootstrapOverrides .nav,
+#bootstrapOverrides nav li{
+	width: 100%;
+	margin: 0;
+	height: 100%;
+	background-color: rgba(126, 0, 6, 0.9);
+}
+
+#bootstrapOverrides .navbar-default .icon-bar,
+#bootstrapOverrides .navbar-default .icon-bar{
+	background-color: #fff;
+}
+
+#bootstrapOverrides .navbar-default .navbar-toggle:focus,
+#bootstrapOverrides .navbar-default .navbar-toggle:hover{
+	background-color: #fff;
+	box-shadow: 0 0 2px #000;
+}
+
+#bootstrapOverrides .navbar-default .navbar-toggle:focus .icon-bar,
+#bootstrapOverrides .navbar-default .navbar-toggle:hover .icon-bar{
 	background-color: #7E0006;
+	/*background-color: #fff;*/
 }
 
-#bootstrapOverrides nav li:hover a{
-	color: #fff;
-}
-
-#bootstrapOverrides nav a:hover{
-	color: #fff;
-}
+/*.getInTouch{
+	width: 90%;
+	position: absolute;
+	left: 5%;
+	text-align: right;
+}*/
 
 #bootstrapOverrides .here{
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #7E0006;
+	text-shadow: 0 0 2px #fff;
+}
+
+#brand {
+	width: 50vw;
+	position: fixed;
+	left: 25vw;
+	top: 0;
+	color: #fff;
+	z-index: 1100;
+	text-align: center;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+	.hex{
+		display: none;
+	}
+	#brand h1 {
+		font-size: 22px;
+		margin: 5px 0 0;
+	}
+	#brand h2 {
+		font-size: 16px;
+		margin: 0 0 3px;
+	}
+
+#tagline{
+	width: 100vw;
+	left: -25vw;
+	padding: 12px 0 5px;
+	background-color: rgba(126, 0, 6, 0.6);
+    color: #fff;
+	text-shadow: 0 0 2px #000;
+	text-align: center;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+	#tagline p{
+		font-size: 16px;
+	}
+
+#content {
+	height: 100%;
+	width: 100vw;
 }
 
 .info{
 	display: none;
-	position: relative;
-	bottom: 15vh;
-	height: 70vh;
-	width: 80vw;
-	background-color: rgba(255, 255, 255, 0.8);
-	border-radius: 5px;
-	overflow-y: scroll;
-	margin: auto;
-	padding: 15px;
 }
 
 .active{
 	display: block;
+	margin-bottom: 45px;
+	/*position: relative;*/
+	/*bottom: 15vh;*/
+	/*height: 70vh;*/
+	width: 100vw;
+	/*background-color: rgba(255, 255, 255, 0.8);*/
+	/*border-radius: 3px;*/
+	/*overflow-y: scroll;*/
+	/*margin: auto;*/
+	padding: 15px;
+	/*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);*/
 }
 
-#home .text{
-	width: 59vw;
-	text-align: center;
-	font-size: 3.5vh;
-	position: absolute;
-	right: 0;
-}
-
-#home img{
+#home img {
 	height: 31vw;
 	width: auto;
-	position: absolute;
-	top: calc((70vh - 31vw)/2);
-	left: 0;
-	margin: 5px;
+	margin: 10px;
+	float: left;
+	display: inline-block;
+}
+#home .text {
+	width: 100%;
+	height: 100%;
+    padding-top: 15px;
+}
+#home p {
+	text-align: center;
+	display: inline;
 }
 
-#extended{
+#about h3 {
+	text-align: center;
+}
+#about .moreInfo {
+	width: 125px;
+	margin-left: calc((100vw - 125px)/2);
+}
+
+#extended {
 	display: none;
 	height: 100vh;
 	width: 100vw;
@@ -116,13 +247,7 @@
 	cursor: pointer;
 }
 
-.moreInfo{
-	cursor: pointer;
-	width: 125px;
-	margin-left: calc((80vw - 125px)/2);
-}
-
-#moreInfo{
+/*#moreInfo{
 	background-color: #fff;
 	height: 90vh;
 	width: 70vw;
@@ -131,72 +256,72 @@
 	left: 15vw;
 	padding: 15px;
 	overflow-y: scroll;
-}
+}*/
 
-	#moreInfo img, #moreInfo p{
+	/*#moreInfo img, #moreInfo p{
 		display: inline;
-	}
+	}*/
 
-	#moreInfo img{
+	/*#moreInfo img{
 		float: left;
 		margin: 0 20px 0 0;
-	}
+	}*/
 
-.getInTouch{
+/*.getInTouch{
 	width: 66vw;
 	position: absolute;
 	left: 7vw;
 	text-align: right;
-}
+}*/
 
-	.getInTouch p{
+	/*.getInTouch p{
 		margin-right: 10px;
-	}
+	}*/
 
-	.textInput, .messageArea, .checkHuman{
+	/*.textInput, .messageArea, .checkHuman{
 		width: 66vw;
 		display: flex;
 		flex-direction: row;
 		margin-top: 5px;
-	}
+	}*/
 
-		.textInput p, .messageArea p, .checkHuman p{
+		/*.textInput p, .messageArea p, .checkHuman p{
 			width: 22vw;
-		}
+		}*/
 
 
-		.textInput input, .messageArea textarea{
+		/*.textInput input, .messageArea textarea{
 			width: 44vw;
 			min-width: 190px;
-		}
+		}*/
 
-		#bootstrapOverrides input, #bootstrapOverrides textarea{
+		/*#bootstrapOverrides input, #bootstrapOverrides textarea{
 			border: 1px solid #7E0006;
 			font-family: 'arial';
-		}
+		}*/
 
-		.checkHuman{
+		/*.checkHuman{
 			position: relative;
-		}
+		}*/
 
-		.textInput input, .checkHuman input{
+		/*.textInput input, .checkHuman input{
 			max-height: 33px;
-		}
+		}*/
 
-		.messageArea textarea{
+		/*.messageArea textarea{
 			height: 30%;
 			padding: 1px;
-		}
+		}*/
 
-		.checkHuman input{
+	/*	.checkHuman input{
 			/*flex: 1;*/
 			/*min-width: 190px;*/
-			height: 36px;
-			position: absolute;
-			right: 0;
+			/*height: 36px;*/
+			/*position: absolute;*/
+			/*right: 0;*/
 			/*bottom: 0;*/
 			/*margin-top: 8pc;*/
-		}
+		/*}*/
 
 /*		.checkHuman img, .checkHuman a{
 			position: absolute;
@@ -204,52 +329,124 @@
 		}*/
 
 
-	.getInTouch button{
+	/*.getInTouch button{
 		width: 80px;
 		position: relative;
 		margin-left: calc((66vw - 160px)/3);
 		margin-top: 8px;
 		float: left;
-	}
+	}*/
 
 #footer{
 	width: 100%;
 	position: fixed;
 	bottom: 0;
-	height: 50px;
-	/*background-color: rgba(255, 255, 255, 0.9);*/
-	/*background-color: #fff;*/
+	height: 40px;
 	background-image: url("../images/British_Honduras_1914.jpg");
 	background-size: 100vw;
 	font-size: 15px;
 	text-align: center;
-	padding: 13px;
+	box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.2);
 }
 
 	#footer p{
-		background-color: rgba(255, 255, 255, 0.7);
-	}
-
-@media (max-width:768px){
-	#bootstrapOverrides .navbar-toggle{
-		border-color: transparent;
-		margin-right: 20px;
-	}
-
-	#bootstrapOverrides .navbar-toggle:focus, #bootstrapOverrides .navbar-toggle:hover{
-		background-color: rgba(0, 0, 0, 0.2);
-	}
-
-	#bootstrapOverrides .nav, #bootstrapOverrides nav li{
+		background-color: rgba(255, 255, 255, 0.3);
+		padding: 5px;
+		height: 100%;
 		width: 100%;
-		margin: 0;
+		text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 	}
 
-	.getInTouch{
-		width: 90%;
-		position: absolute;
-		left: 5%;
-		text-align: right;
+@media (min-width:768px){
+	#bootstrapOverrides nav a{
+		margin-top: 2px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#bootstrapOverrides nav li{
+		width: 20%;
+		/*height: 30px;*/
+	}
+	#bootstrapOverrides nav li:nth-child(2){
+		margin-right: 20%;
+	}
+	.active{
+		display: block;
+		/*margin-bottom: 45px;*/
+		/*position: relative;*/
+		/*bottom: 15vh;*/
+		/*height: 70vh;*/
+		/*width: 80vw;*/
+		/*background-color: rgba(255, 255, 255, 0.8);*/
+		/*border-radius: 3px;*/
+		/*overflow-y: scroll;*/
+		/*margin: auto;*/
+		padding: 1vw 5vw;
+		/*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);*/
+	}
+	#brand {
+		width: 26vw;
+		height: 65px;
+		position: fixed;
+		top: 0;
+		left: 37vw;
+		z-index: 1100;
+		text-align: center;
+		text-shadow: none;
+	}
+		.hex{
+			display: block;
+			position: absolute;
+			top: 0;
+			left: -5vw;
+			width: 36vw;
+			max-height: 70px;
+			z-index: -1;
+		    filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.6));
+		    -webkit-filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.6));
+		}
+
+		#brand h1 {
+			font-size: 24px;
+			margin: 5px 0;
+			color: #7E0006;
+		}
+		#brand h2 {
+			font-size: 20px;
+			margin: 0;
+			color: #7E0006;
+		}
+
+	#tagline{
+		padding-top: 25px;
+	}
+	#tagline p{
+		font-size: 20px;
+	}
+
+	#home img{
+		height: 31vw;
+		width: auto;
+		margin: 15px;
+		float: left;
+		display: inline-block;
+	}
+	#home p{
+		margin-top: 15px;
+		width: 59vw;
+		/*text-align: center;*/
+		/*font-size: 3.5vh;*/
+		/*position: absolute;*/
+		/*right: 0;*/
+		/*display: inline-block;*/
+	}
+
+}
+@media (min-width:950px){
+	#brand h1 {
+		font-size: 28px;
+	}
+	#brand h2 {
+		font-size: 22px;
 	}
 }
-

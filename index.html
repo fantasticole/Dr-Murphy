@@ -43,7 +43,31 @@
     	</div>
     	<div id="content">
 	    	<div id="home" class="info active">
-	    		<iframe class="map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJw2OT2S_BxokR75NrEkd_7QU&key=AIzaSyBMtFNHyqH7uGh4Ydv3RkoNsHEd9MYN0jo" allowfullscreen></iframe>
+			    <script>
+			      function initMap() {
+			        var office = {lat: 39.9616317, lng: -75.2575662};
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 15,
+			          center: office
+			        });
+			        var marker = new google.maps.Marker({
+			          map: map,
+			          position: office,
+			        });
+			        map.setOptions({
+			        	draggable: false,
+			        })
+			        map.addListener('click', function() {
+			          window.open("https://www.google.com/maps/dir//Unlimited+Vision:+Murphy+Windell+H+A+MD,+6800+Market+St,+Upper+Darby,+PA+19082/@39.961668,-75.2575529,15z/data=!4m16!1m7!3m6!1s0x0:0xc7ab74d10598c731!2sUnlimited+Vision:+Murphy+Windell+H+A+MD!3b1!8m2!3d39.961668!4d-75.2575529!4m7!1m0!1m5!1m1!1s0x89c6c12fda40d7a3:0xc7ab74d10598c731!2m2!1d-75.2575529!2d39.961668")
+			        });
+			        marker.addListener('click', function() {
+			          console.log('marker!');
+			        });
+			      }
+			    </script>
+			    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRdIhhQbIOUMFnZ5G9UL8X73Fdt5ti6BE&callback=initMap">
+			    </script>
+			    <div id="map"></div>
 		    	<div class="text">
 		    		<p>Dr. Murphy&#39;s office is located at <a href="https://www.google.com/maps/place/Unlimited+Vision:+Murphy+Windell+H+A+MD/@39.9616317,-75.2575662,17z/data=!3m1!4b1!4m2!3m1!1s0x89c6c12fda40d7a3:0xc7ab74d10598c731">6800 Market Street</a> in Upper Darby, Pennsylvania.
 					</br>

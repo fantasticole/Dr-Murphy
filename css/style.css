@@ -210,6 +210,13 @@
 	float: left;
 	display: inline-block;
 }
+#map {
+	height: 31vw;
+	width: 200px;
+	margin: 10px;
+	float: left;
+	display: inline-block;
+}
 #home .text {
 	width: 100%;
 	height: 100%;

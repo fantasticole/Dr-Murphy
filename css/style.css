@@ -203,9 +203,16 @@
 	/*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);*/
 }
 
-#home img {
+.map {
 	height: 31vw;
 	width: auto;
+	margin: 10px;
+	float: left;
+	display: inline-block;
+}
+#map {
+	height: 31vw;
+	width: 200px;
 	margin: 10px;
 	float: left;
 	display: inline-block;
@@ -218,6 +225,14 @@
 #home p {
 	text-align: center;
 	display: inline;
+}
+
+#about img {
+	height: 31vw;
+	width: auto;
+	margin: 10px;
+	float: right;
+	display: inline-block;
 }
 
 #about h3 {

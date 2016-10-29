@@ -15,7 +15,7 @@
 
 
 /* ## BODY ## */
-#bootstrapOverrides{
+#bootstrapOverrides {
 	color: #7E0006;
 	/*color: #fff;*/
 	margin-top: 45px;
@@ -33,37 +33,44 @@
 	font-family: 'Belleza', sans-serif;
 	font-weight: 600;
 }
-#bootstrapOverrides h1{
+
+#bootstrapOverrides h1 {
 	font-size: 36px;
 }
-#bootstrapOverrides h2{
+
+#bootstrapOverrides h2 {
 	font-size: 28px;
 }
-#bootstrapOverrides h3{
+
+#bootstrapOverrides h3 {
 	font-size: 20px;
 }
-#bootstrapOverrides b{
+
+#bootstrapOverrides b {
 	font-weight: 700;
 }
-#bootstrapOverrides p{
+
+#bootstrapOverrides p {
 	font-size: 20px;
 	margin-bottom: 5px;
 }
-#bootstrapOverrides a{
+
+#bootstrapOverrides a {
 	color: #518DBB;
 }
-#bootstrapOverrides a:hover{
-	color: rgba(177, 102, 105, 0.5);
-	text-decoration: none;
-}
 
-#bootstrapOverrides .container, #bootstrapOverrides .nav{
+#bootstrapOverrides .container,
+#bootstrapOverrides .nav {
 	width: 100%;
 	padding: 0;
 	height: 45px;
 }
 
-#bootstrapOverrides .navbar-default{
+#bootstrapOverrides .nav {
+	padding-bottom: 5px;
+}
+
+#bootstrapOverrides .navbar-default {
 	background-color: rgba(126, 0, 6, 0.9);
 	border: none;
 	border-bottom: 1px solid #7E0006;
@@ -76,7 +83,7 @@
 	text-align: center;
 }
 
-#bootstrapOverrides nav a{
+#bootstrapOverrides nav a {
 	color: #fff;
 	padding: 10px 0;
 	font-size: 17px;
@@ -96,17 +103,17 @@
 	min-height: 45px;
 }
 
-#bootstrapOverrides .navbar-toggle{
+#bootstrapOverrides .navbar-toggle {
 	border-color: transparent;
 	margin-right: 20px;
 }
 
-#bootstrapOverrides .navbar-toggle:focus, #bootstrapOverrides .navbar-toggle:hover{
+#bootstrapOverrides .navbar-toggle:focus, #bootstrapOverrides .navbar-toggle:hover {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
 #bootstrapOverrides .nav,
-#bootstrapOverrides nav li{
+#bootstrapOverrides nav li {
 	width: 100%;
 	margin: 0;
 	height: 100%;
@@ -114,30 +121,30 @@
 }
 
 #bootstrapOverrides .navbar-default .icon-bar,
-#bootstrapOverrides .navbar-default .icon-bar{
+#bootstrapOverrides .navbar-default .icon-bar {
 	background-color: #fff;
 }
 
 #bootstrapOverrides .navbar-default .navbar-toggle:focus,
-#bootstrapOverrides .navbar-default .navbar-toggle:hover{
+#bootstrapOverrides .navbar-default .navbar-toggle:hover {
 	background-color: #fff;
 	box-shadow: 0 0 2px #000;
 }
 
 #bootstrapOverrides .navbar-default .navbar-toggle:focus .icon-bar,
-#bootstrapOverrides .navbar-default .navbar-toggle:hover .icon-bar{
+#bootstrapOverrides .navbar-default .navbar-toggle:hover .icon-bar {
 	background-color: #7E0006;
 	/*background-color: #fff;*/
 }
 
-/*.getInTouch{
+/*.getInTouch {
 	width: 90%;
 	position: absolute;
 	left: 5%;
 	text-align: right;
 }*/
 
-#bootstrapOverrides .here{
+#bootstrapOverrides .here {
 	background-color: rgba(255, 255, 255, 0.8);
 	color: #7E0006;
 	text-shadow: 0 0 2px #fff;
@@ -153,29 +160,33 @@
 	text-align: center;
 	text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
 }
-	.hex{
+
+	.hex {
 		display: none;
 	}
+
 	#brand h1 {
 		font-size: 22px;
 		margin: 5px 0 0;
 	}
+
 	#brand h2 {
 		font-size: 16px;
 		margin: 0 0 3px;
 	}
 
-#tagline{
+#tagline {
 	width: 100vw;
 	left: -25vw;
-	padding: 12px 0 5px;
+	padding: 12px 30px 5px;
 	background-color: rgba(126, 0, 6, 0.6);
     color: #fff;
 	text-shadow: 0 0 2px #000;
 	text-align: center;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
-	#tagline p{
+
+	#tagline p {
 		font-size: 16px;
 	}
 
@@ -184,13 +195,14 @@
 	width: 100vw;
 }
 
-.info{
+.info {
 	display: none;
+	max-width: 800px;
 }
 
-.active{
+.active {
 	display: block;
-	margin-bottom: 45px;
+	margin: 0 auto 45px;
 	/*position: relative;*/
 	/*bottom: 15vh;*/
 	/*height: 70vh;*/
@@ -203,29 +215,41 @@
 	/*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);*/
 }
 
-.map {
-	height: 31vw;
-	width: auto;
-	margin: 10px;
-	float: left;
+.map-container {
+	height: 200px;
+	width: calc(100% + 30px);
+	margin-top: -15px;
+	margin-bottom: 20px;
+	margin-left: -15px;
 	display: inline-block;
 }
+
 #map {
-	height: 31vw;
-	width: 200px;
-	margin: 10px;
-	float: left;
-	display: inline-block;
+	height: 100%;
+	width: 100%;
 }
+
 #map .map-label {
 	color: #000;
 	font-size: 12px;
 }
-#home .text {
+
+.about-section {
+	border: 1px solid #7E0006;
 	width: 100%;
 	height: 100%;
-    padding-top: 15px;
+    margin-top: 15px;
+    padding: 15px;
 }
+
+.about-section h1 {
+	font-size: 30px;
+    margin-top: 0;
+}
+
+#home .text {
+}
+
 #home p {
 	text-align: center;
 	display: inline;
@@ -242,6 +266,7 @@
 #about h3 {
 	text-align: center;
 }
+
 #about .moreInfo {
 	width: 125px;
 	margin-left: calc((100vw - 125px)/2);
@@ -258,7 +283,7 @@
 	z-index: 10;
 }
 
-#extended i{
+#extended i {
 	position: fixed;
 	top: 5%;
 	right: 7%;
@@ -266,7 +291,7 @@
 	cursor: pointer;
 }
 
-/*#moreInfo{
+/*#moreInfo {
 	background-color: #fff;
 	height: 90vh;
 	width: 70vw;
@@ -277,62 +302,62 @@
 	overflow-y: scroll;
 }*/
 
-	/*#moreInfo img, #moreInfo p{
+	/*#moreInfo img, #moreInfo p {
 		display: inline;
 	}*/
 
-	/*#moreInfo img{
+	/*#moreInfo img {
 		float: left;
 		margin: 0 20px 0 0;
 	}*/
 
-/*.getInTouch{
+/*.getInTouch {
 	width: 66vw;
 	position: absolute;
 	left: 7vw;
 	text-align: right;
 }*/
 
-	/*.getInTouch p{
+	/*.getInTouch p {
 		margin-right: 10px;
 	}*/
 
-	/*.textInput, .messageArea, .checkHuman{
+	/*.textInput, .messageArea, .checkHuman {
 		width: 66vw;
 		display: flex;
 		flex-direction: row;
 		margin-top: 5px;
 	}*/
 
-		/*.textInput p, .messageArea p, .checkHuman p{
+		/*.textInput p, .messageArea p, .checkHuman p {
 			width: 22vw;
 		}*/
 
 
-		/*.textInput input, .messageArea textarea{
+		/*.textInput input, .messageArea textarea {
 			width: 44vw;
 			min-width: 190px;
 		}*/
 
-		/*#bootstrapOverrides input, #bootstrapOverrides textarea{
+		/*#bootstrapOverrides input, #bootstrapOverrides textarea {
 			border: 1px solid #7E0006;
 			font-family: 'arial';
 		}*/
 
-		/*.checkHuman{
+		/*.checkHuman {
 			position: relative;
 		}*/
 
-		/*.textInput input, .checkHuman input{
+		/*.textInput input, .checkHuman input {
 			max-height: 33px;
 		}*/
 
-		/*.messageArea textarea{
+		/*.messageArea textarea {
 			height: 30%;
 			padding: 1px;
 		}*/
 
-	/*	.checkHuman input{
+	/*	.checkHuman input {
 			/*flex: 1;*/
 			/*min-width: 190px;*/
 			/*height: 36px;*/
@@ -342,13 +367,13 @@
 			/*margin-top: 8pc;*/
 		/*}*/
 
-/*		.checkHuman img, .checkHuman a{
+/*		.checkHuman img, .checkHuman a {
 			position: absolute;
 			left: 0;
 		}*/
 
 
-	/*.getInTouch button{
+	/*.getInTouch button {
 		width: 80px;
 		position: relative;
 		margin-left: calc((66vw - 160px)/3);
@@ -356,7 +381,7 @@
 		float: left;
 	}*/
 
-#footer{
+#footer {
 	width: 100%;
 	position: fixed;
 	bottom: 0;
@@ -368,7 +393,7 @@
 	box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.2);
 }
 
-	#footer p{
+	#footer p {
 		background-color: rgba(255, 255, 255, 0.3);
 		padding: 5px;
 		height: 100%;
@@ -376,20 +401,23 @@
 		text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 	}
 
-@media (min-width:768px){
-	#bootstrapOverrides nav a{
+@media (min-width:768px) {
+	#bootstrapOverrides nav a {
 		margin-top: 2px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-	#bootstrapOverrides nav li{
+
+	#bootstrapOverrides nav li {
 		width: 20%;
 		/*height: 30px;*/
 	}
-	#bootstrapOverrides nav li:nth-child(2){
+
+	#bootstrapOverrides nav li:nth-child(2) {
 		margin-right: 20%;
 	}
-	.active{
+
+	.active {
 		display: block;
 		/*margin-bottom: 45px;*/
 		/*position: relative;*/
@@ -400,9 +428,10 @@
 		/*border-radius: 3px;*/
 		/*overflow-y: scroll;*/
 		/*margin: auto;*/
-		padding: 1vw 5vw;
+		/*padding: 1vw 5vw;*/
 		/*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);*/
 	}
+
 	#brand {
 		width: 26vw;
 		height: 65px;
@@ -413,7 +442,8 @@
 		text-align: center;
 		text-shadow: none;
 	}
-		.hex{
+
+		.hex {
 			display: block;
 			position: absolute;
 			top: 0;
@@ -430,27 +460,42 @@
 			margin: 5px 0;
 			color: #7E0006;
 		}
+
 		#brand h2 {
 			font-size: 20px;
 			margin: 0;
 			color: #7E0006;
 		}
 
-	#tagline{
+	#tagline {
 		padding-top: 25px;
 	}
-	#tagline p{
+
+	#tagline p {
 		font-size: 20px;
 	}
 
-	#home img{
-		height: 31vw;
-		width: auto;
-		margin: 15px;
-		float: left;
-		display: inline-block;
+	#home {
+		position: relative;
+		height: auto;
 	}
-	#home p{
+
+	.map-container {
+		border: 1px solid #7E0006;
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+		height: calc(100% - 50px);
+		width: 250px;
+		margin: 10px;
+		position: absolute;
+	}
+
+	.about-section {
+		width: calc(100% - 270px);
+		margin: 10px;
+		margin-left: 270px;
+	}
+
+	#home p {
 		margin-top: 15px;
 		width: 59vw;
 		/*text-align: center;*/
@@ -461,11 +506,15 @@
 	}
 
 }
-@media (min-width:950px){
+
+@media (min-width:950px) {
 	#brand h1 {
 		font-size: 28px;
 	}
+
 	#brand h2 {
 		font-size: 22px;
 	}
+
 }
+

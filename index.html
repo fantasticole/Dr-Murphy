@@ -43,62 +43,40 @@
     	</div>
     	<div id="content">
 	    	<div id="home" class="info active">
-			    <script>
-			      function initMap() {
-			        var office,
-			        	map,
-			        	marker,
-			        	info,
-			        	infoIsOpen = true;
-
-			        office = {lat: 39.9616317, lng: -75.2575662},
-			        map = new google.maps.Map(document.getElementById('map'), {
-						center: office,
-						mapTypeControl: false,
-						streetViewControl: false,
-						zoom: 15,
-			        });
-			        marker = new google.maps.Marker({
-						map: map,
-						position: office,
-						title: '6800 Market Street, Philadelphia, PA'
-			        });
-			        info = new google.maps.InfoWindow({
-					    content:'<p class="map-label">Unlimited Vision:</br>Windell Murphy, MD</p>'
-					});
-			        map.setOptions({
-			        	draggable: false,
-			        })
-			        map.addListener('click', function() {
-				        window.open("https://www.google.com/maps/dir//Unlimited+Vision:+Murphy+Windell+H+A+MD,+6800+Market+St,+Upper+Darby,+PA+19082/@39.961668,-75.2575529,15z/data=!4m16!1m7!3m6!1s0x0:0xc7ab74d10598c731!2sUnlimited+Vision:+Murphy+Windell+H+A+MD!3b1!8m2!3d39.961668!4d-75.2575529!4m7!1m0!1m5!1m1!1s0x89c6c12fda40d7a3:0xc7ab74d10598c731!2m2!1d-75.2575529!2d39.961668")
-			        });
-			        marker.addListener('click', function() {
-			        	if (infoIsOpen) {
-			        		info.close(map, marker);
-			        		infoIsOpen = false;
-			        	}
-			        	else {
-			        		info.open(map, marker);
-			        		infoIsOpen = true;
-			        	}
-					});
-					info.open(map, marker);
-			      }
-			    </script>
-			    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRdIhhQbIOUMFnZ5G9UL8X73Fdt5ti6BE&callback=initMap">
-			    </script>
-			    <div id="map"></div>
-		    	<div class="text">
-		    		<p>Dr. Murphy&#39;s office is located at <a href="https://www.google.com/maps/place/Unlimited+Vision:+Murphy+Windell+H+A+MD/@39.9616317,-75.2575662,17z/data=!3m1!4b1!4m2!3m1!1s0x89c6c12fda40d7a3:0xc7ab74d10598c731">6800 Market Street</a> in Upper Darby, Pennsylvania.
-					</br>
-					</br>The office is across the street from Septa&#39;s 69th Street Terminal.
-					</br>
-					</br>
-					<b>Hours</b>:
-					</br>9:00 - 4:00 Mon - Fri
-					</br>By appointment.
-					</br>
-					</br>Call (610) 734-2145 today to schedule a vision checkup.</p>
+			    <div class="map-container">
+				    <div id="map"></div>
+			    </div>
+		    	<div class="contact-info about-section">
+		    		<h1 class="contact-info__title">Contact Information</h1>
+		    		<ul class="contact-info__details">
+		    			<li>
+		    				<span class="contact-info__details-label">Phone: </span>(610) 734-2145
+		    			</li>
+		    			<li>
+		    				<span class="contact-info__details-label">Address: </span>
+		    				<a href="https://www.google.com/maps/place/Unlimited+Vision:+Murphy+Windell+H+A+MD/@39.9616317,-75.2575662,17z/data=!3m1!4b1!4m2!3m1!1s0x89c6c12fda40d7a3:0xc7ab74d10598c731">6800 Market Street</a>, across the street from Septa's 69th Street Terminal.
+		    			</li>
+		    		</ul>
+		    	</div>
+		    	<div class="hours about-section">
+		    		<h1 class="hours__title">Hours</h1>
+		    		<ul class="hours__details">
+		    			<li>
+		    				<span class="hours__details-label">Monday: </span>9:00 AM - 4:00 PM
+		    			</li>
+		    			<li>
+		    				<span class="hours__details-label">Tuesday: </span>9:00 AM - 4:00 PM
+		    			</li>
+		    			<li>
+		    				<span class="hours__details-label">Wedsday: </span>9:00 AM - 4:00 PM
+		    			</li>
+		    			<li>
+		    				<span class="hours__details-label">Thursday: </span>9:00 AM - 4:00 PM
+		    			</li>
+		    			<li>
+		    				<span class="hours__details-label">Friday: </span>9:00 AM - 4:00 PM
+		    			</li>
+		    		</ul>
 		    	</div>
 	    	</div>
 			<div id="about" class="info">
@@ -169,10 +147,12 @@
 			</div>
 		</div>
 		<div id="footer">
-			<p>&copy; 2011 Windell Murphy, MD.  All rights reserved.</p>
+			<p>&copy; 2016 Windell Murphy, MD.  All rights reserved.</p>
 		</div>
 		<script src="js/jQuery.js"></script>
 		<script src="js/murphy.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRdIhhQbIOUMFnZ5G9UL8X73Fdt5ti6BE&callback=initMap">
+</script>

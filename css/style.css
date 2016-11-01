@@ -5,13 +5,17 @@
 
 
 /* ## COLORS ## */
-/* Maroon - #7E0006/rgba(126, 0, 6, 1) */
-/* Rose - #B16669/rgba(177, 102, 105, 1) */
-/* White - #fff/rgba(255, 255, 255, 1) */
-/* Steel Blue - #518DBB/rgba(81, 141, 187, 1) */
-/* Bright Blue - #5386E4/rgba(83, 134, 228, 1) */
-/* Turquoise - #75DDDD/rgba(117, 221, 221, 1) */
-/* Slate Grey - #363636/rgba(54, 54, 54, 1) */
+/* maroon - #7e0006/rgba(126, 0, 6, 1) */
+/* copper penny - #b16669/rgba(177, 102, 105, 1) */
+/* white - #fff/rgba(255, 255, 255, 1) */
+/* black - #000/rgba(0, 0, 0, 1) */
+/* shadow blue - #7180AC/rgb(112, 127, 170, 1) */
+/* yankees blue - #1C3144 */
+/* jet - #34344A/rgba(54, 54, 54, 1) */
+/* space cadet - #1B264F/rgba(54, 54, 54, 1) */
+/* steel blue - #518dbb/rgba(81, 141, 187, 1) */
+
+
 
 
 /* ## BODY ## */
@@ -35,7 +39,7 @@
 }
 
 #bootstrapOverrides h1 {
-	font-size: 36px;
+	font-size: 30px;
 }
 
 #bootstrapOverrides h2 {
@@ -56,6 +60,10 @@
 }
 
 #bootstrapOverrides a {
+	color: #1B264F;
+}
+
+#bootstrapOverrides a:hover {
 	color: #518DBB;
 }
 
@@ -150,6 +158,11 @@
 	text-shadow: 0 0 2px #fff;
 }
 
+body {
+	height: auto;
+	min-height: 100%;
+}
+
 #brand {
 	width: 50vw;
 	position: fixed;
@@ -241,10 +254,14 @@
     padding: 15px;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.about-section__label {
+	font-weight: bold;
 }
 
 .about-section h1 {
-	font-size: 30px;
     margin-top: 0;
 }
 
@@ -253,29 +270,36 @@
 	list-style: none;
 }
 
-#home .text {
+#about-page .about-section ul {
+	padding-left: 0;
 }
 
-#home p {
+#home-page .text {
+}
+
+#home-page p {
 	text-align: center;
 	display: inline;
 }
 
-#about img {
-	height: 31vw;
-	width: auto;
+#about-page img {
+	width: 200px;
 	margin: 10px;
 	float: right;
 	display: inline-block;
+	border: 1px solid #7E0006;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
-#about h3 {
+#about-page h1 {
 	text-align: center;
+	margin-top: 0;
 }
 
-#about .moreInfo {
-	width: 125px;
-	margin-left: calc((100vw - 125px)/2);
+#about-page .moreInfo {
+	display: block;
+	margin: auto;
+	font-size: 14px;
 }
 
 #extended {
@@ -286,100 +310,112 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 10;
+	right: 0;
+	bottom: 0;
+	z-index: 1101;
+}
+
+#extended h1 {
+	text-align: center;
+	margin-top: 0;
 }
 
 #extended i {
-	position: fixed;
-	top: 5%;
-	right: 7%;
-	color: #fff;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #1B264F;
 	cursor: pointer;
 }
 
-/*#moreInfo {
+#extended i:hover {
+	color: #518DBB;
+}
+
+
+#moreInfo {
 	background-color: #fff;
-	height: 90vh;
+	height: 80vh;
 	width: 70vw;
 	position: absolute;
-	top: 5vh;
+	top: 10vh;
 	left: 15vw;
-	padding: 15px;
+	padding: 25px;
 	overflow-y: scroll;
-}*/
+}
 
-	/*#moreInfo img, #moreInfo p {
+	#moreInfo img, #moreInfo p {
 		display: inline;
-	}*/
+	}
 
-	/*#moreInfo img {
+	#moreInfo img {
 		float: left;
-		margin: 0 20px 0 0;
-	}*/
+		margin: 0 20px 20px 0;
+	}
 
 /*.getInTouch {
 	width: 66vw;
 	position: absolute;
 	left: 7vw;
 	text-align: right;
-}*/
+}
 
-	/*.getInTouch p {
+	.getInTouch p {
 		margin-right: 10px;
-	}*/
+	}
 
-	/*.textInput, .messageArea, .checkHuman {
+	.textInput, .messageArea, .checkHuman {
 		width: 66vw;
 		display: flex;
 		flex-direction: row;
 		margin-top: 5px;
-	}*/
+	}
 
-		/*.textInput p, .messageArea p, .checkHuman p {
+		.textInput p, .messageArea p, .checkHuman p {
 			width: 22vw;
-		}*/
+		}
 
 
-		/*.textInput input, .messageArea textarea {
+		.textInput input, .messageArea textarea {
 			width: 44vw;
 			min-width: 190px;
-		}*/
+		}
 
-		/*#bootstrapOverrides input, #bootstrapOverrides textarea {
+		#bootstrapOverrides input, #bootstrapOverrides textarea {
 			border: 1px solid #7E0006;
 			font-family: 'arial';
-		}*/
+		}
 
-		/*.checkHuman {
+		.checkHuman {
 			position: relative;
-		}*/
+		}
 
-		/*.textInput input, .checkHuman input {
+		.textInput input, .checkHuman input {
 			max-height: 33px;
-		}*/
+		}
 
-		/*.messageArea textarea {
+		.messageArea textarea {
 			height: 30%;
 			padding: 1px;
 		}*/
 
-	/*	.checkHuman input {
-			/*flex: 1;*/
-			/*min-width: 190px;*/
-			/*height: 36px;*/
-			/*position: absolute;*/
-			/*right: 0;*/
-			/*bottom: 0;*/
-			/*margin-top: 8pc;*/
-		/*}*/
+		/*.checkHuman input {
+			flex: 1;
+			min-width: 190px;
+			height: 36px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			margin-top: 8pc;
+		}
 
-/*		.checkHuman img, .checkHuman a {
+		.checkHuman img, .checkHuman a {
 			position: absolute;
 			left: 0;
-		}*/
+		}
 
 
-	/*.getInTouch button {
+	.getInTouch button {
 		width: 80px;
 		position: relative;
 		margin-left: calc((66vw - 160px)/3);
@@ -481,7 +517,7 @@
 		font-size: 20px;
 	}
 
-	#home {
+	#home-page {
 		position: relative;
 		height: auto;
 	}
@@ -495,18 +531,16 @@
 		position: absolute;
 	}
 
-	.about-section {
+	#home-page .about-section {
 		width: calc(100% - 270px);
-		margin: 10px;
 		margin-left: 270px;
 	}
 
-	.contact-info__details-label,
-	.hours__details-label {
-		font-weight: bold;
+	.about-section {
+		margin: 10px;
 	}
 
-	#home p {
+	#home-page p {
 		margin-top: 15px;
 		width: 59vw;
 		/*text-align: center;*/
@@ -514,6 +548,12 @@
 		/*position: absolute;*/
 		/*right: 0;*/
 		/*display: inline-block;*/
+	}
+
+	#about-page .about-section {
+		width: calc(100% - 280px);
+		float: left;
+		margin: 10px;
 	}
 
 }
